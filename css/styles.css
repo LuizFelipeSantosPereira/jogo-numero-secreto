@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --bg-color: #0AA1DD;
+    --primary-color:#E8F9FD;
+}
+body{
+    background: radial-gradient(ellipse at center center, var(--bg-color) 0%, #000465 100%, #79DAE8 75%);
+    color:var(--primary-color);
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+h1{
+    font-size: 5em;
+}
+h2{
+    font-size: 4em;
+}
+h3{
+    font-size: 2em;
+    margin-top: 20px;
+}
+h1,h2,h3{
+    cursor: default;
+}
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+.box{
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+.btn-jogar{
+    padding: 8px 15px;
+    border: none;
+    background-color: #0AA1DD;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.5em;
+    transition: 0.2s;
+    box-shadow: 2px 2px 10px #000465;
+}
+.btn-jogar:hover{
+    transform: scale(1.05);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: 0.2s;
+    color: #ffffff;
+}
